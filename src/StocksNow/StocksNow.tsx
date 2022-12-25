@@ -10,4 +10,22 @@ interface Props {}
 const StocksNow: React.FC<Props> = () => {
   return (
     <div className='app'>
-      {/* <Hea
+      {/* <Header /> */}
+      <Routes>
+        <div className='content-wrapp'>
+          <div className='content'>
+            <Sidebar />
+            <PublicRoute exact path='/' component={Main} />
+            <PublicRoute path='/latest-news' component={EmptyPage} />
+            <PublicRoute path='/quotes' component={EmptyPage} />
+            <PublicRoute path='/holders' component={EmptyPage} />
+            <PublicRoute path='/analysis' component={EmptyPage} />
+            <PublicRoute path='/statistics' component={EmptyPage} />
+          </div>
+        </div>
+      </Routes>
+    </div>
+  );
+};
+
+export default StocksNow;
