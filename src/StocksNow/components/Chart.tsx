@@ -117,3 +117,93 @@ const Chart: React.FC<Props> = ({ data: initialData, dateTimeFormat = '%c', heig
         clamp={false}
         height={height}
         ratio={ratio}
+        width={width}
+        margin={margin}
+        data={data}
+        displayXAccessor={displayXAccessor}
+        seriesName='Data'
+        xScale={xScale}
+        xAccessor={xAccessor}
+        xExtents={xExtents}
+        zoomAnchor={lastVisibleItemBasedZoomAnchor}
+      >
+        <Char id={2} height={barChartHeight} origin={barChartOrigin} yExtents={barChartExtents}>
+          <BarSeries fillStyle={volumeColor} yAccessor={volumeSeries} />
+        </Char>
+        <Char id={3} height={chartHeight} yExtents={candleChartExtents}>
+          <XAxis showGridLines={true} showTicks={false} showTickLabel={false} gridLinesStrokeStyle='#0d1117' strokeStyle='#4A5568' />
+          <YAxis
+            showGridLines={true}
+            tickFormat={pricesDisplayFormat}
+            gridLinesStrokeStyle='#0d1117'
+            strokeStyle='#4A5568'
+            tickLabelFill='#718096'
+            tickStrokeStyle='#718096'
+          />
+          <CandlestickSeries />
+          <LineSeries yAccessor={ema26.accessor()} strokeStyle={ema26.stroke()} />
+          <CurrentCoordinate yAccessor={ema26.accessor()} fillStyle={ema26.stroke()} />
+          <LineSeries yAccessor={ema12.accessor()} strokeStyle={ema12.stroke()} />
+          <CurrentCoordinate yAccessor={ema12.accessor()} fillStyle={ema12.stroke()} />
+          <MouseCoordinateY rectWidth={margin.right} displayFormat={pricesDisplayFormat} />
+          <EdgeIndicator
+            itemType='last'
+            rectWidth={margin.right}
+            fill={openCloseColor}
+            lineStroke={openCloseColor}
+            displayFormat={pricesDisplayFormat}
+            yAccessor={yEdgeIndicator}
+          />
+          <MovingAverageTooltip
+            origin={[8, 24]}
+            options={[
+              {
+                yAccessor: ema26.accessor(),
+                type: 'EMA',
+                stroke: ema26.stroke(),
+                windowSize: ema26.options().windowSize,
+              },
+              {
+                yAccessor: ema12.accessor(),
+                type: 'EMA',
+                stroke: ema12.stroke(),
+                windowSize: ema12.options().windowSize,
+              },
+            ]}
+          />
+
+          {/* <ZoomButtons /> */}
+          <OHLCTooltip fontWeight={900} fontSize={14} textFill='#CBD5E0' origin={[8, 16]} />
+        </Char>
+        <Char id={4} height={elderRayHeight} yExtents={[0, elder.accessor()]} origin={elderRayOrigin} padding={{ top: 8, bottom: 8 }}>
+          <XAxis showGridLines strokeStyle='#4A5568' tickLabelFill='#718096' tickStrokeStyle='#718096' gridLinesStrokeStyle='#0d1117' />
+          <YAxis
+            ticks={4}
+            tickFormat={pricesDisplayFormat}
+            strokeStyle='#4A5568'
+            tickLabelFill='#718096'
+            tickStrokeStyle='#718096'
+            gridLinesStrokeStyle='#0d1117'
+          />
+
+          <MouseCoordinateX displayFormat={timeDisplayFormat} />
+          <MouseCoordinateY rectWidth={margin.right} displayFormat={pricesDisplayFormat} />
+
+          <ElderRaySeries yAccessor={elder.accessor()} />
+
+          {/* <SingleValueTooltip
+                        yAccessor={elder.accessor()}
+                        yLabel="Elder Ray"
+                        yDisplayFormat={(d: any) =>
+                            `${pricesDisplayFormat(d.bullPower)}, ${pricesDisplayFormat(d.bearPower)}`
+                        }
+                        origin={[8, 16]}
+                    /> */}
+        </Char>
+        <CrossHairCursor />
+      </ChartCanvas>
+    </>
+  );
+};
+
+export default Chart;
