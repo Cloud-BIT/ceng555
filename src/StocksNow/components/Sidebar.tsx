@@ -35,4 +35,24 @@ const Sidebar: React.FC<Props> = () => {
             </Link>
           </li>
           <li>
-            <Link to='/analysis' className='sidebar
+            <Link to='/analysis' className='sidebar-link'>
+              <div>
+                <p>Analysis</p>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link to='/statistics' className='sidebar-link'>
+              <div>
+                <p>Statistics</p>
+              </div>
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div className='sidebar-footer-wrapp'></div>
+    </div>
+  );
+};
+
+export default Sidebar;
