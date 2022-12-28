@@ -1,0 +1,10 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .main-content {
+        flex: 4;
+        display: flex;
+        flex-direction: column;
+        // background: purple
