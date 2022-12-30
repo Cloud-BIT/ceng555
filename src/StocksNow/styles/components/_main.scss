@@ -72,4 +72,35 @@
                 div {
                     height: 55%;
                     width: 70%;
-              
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: $black800;
+                    border-radius: 25px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: $black700;
+                        transition: .4s;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+
+                .active {
+                    background: $cta;
+                }
+            }
+        }
+    }
+
+    .chart-wrapp {
+        margin-bottom: 10vh;
+        height: 80%;
+        width: 100%;
+        // background: red;
+        display: flex;
+        j
