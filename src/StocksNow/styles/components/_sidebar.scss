@@ -19,4 +19,32 @@
             font-size: 28px;
             font-weight: bold;
             font-family: 'Poppins', sans-serif;
-            color: $
+            color: $cta;
+            padding-left: 15px;
+            background: -webkit-linear-gradient(30deg, $cta, $blue300);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .sidebar-list-wrapp {
+        height: 48%;
+        width: 90%;
+
+        ul {
+            height: 100%;
+            width: 100%;
+            // background: red;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                
+                div {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    border-radius: 25px
