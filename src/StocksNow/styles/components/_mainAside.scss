@@ -1,0 +1,222 @@
+
+.main-aside {
+    height: 100vh;
+    width: 400px;
+    margin-right: 3%;
+    display: flex;
+    // background: green;
+    flex-direction: column;
+    border-left: 1px solid $black800;
+
+    .main-aside-cards-stockNews-wrapp {
+        height: 30%;
+        // background: red;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+
+        .stockNews-card {
+            height: 80%;
+            width: 94%;
+            background: $black800;
+            border-radius: 10px;
+
+            &:hover {
+                cursor: pointer;
+                // background: $black700;
+                opacity: .4;
+                background: $black700;
+                // opacity: .4;
+                transition: .4s background;
+                transform: scale(98%);
+                transition: .3s transform;
+                // transform: scale(98%);
+                // transition: .3s background;
+            }
+
+            a {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .stockNews-headline-wrapp {
+                    height: 25%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-bottom: 1px solid $black700;
+
+                    p {
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+
+                .stockNews {
+                    height: 75%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .stockNews-title-wrapp {
+                        height: 70%;
+                        width: 100%;
+                        
+                        .stockNews-title { 
+                            font-size: 18px;
+                            padding-left: 15px;
+                            padding-top: 15px;
+                        }
+                    }
+
+                    .stockNews-publisher-wrapp {
+                        height: 30%;
+                        width: 100%;
+                        
+                        .stockNews-publisher { 
+                            font-size: 12px;
+                            padding-left: 15px;
+                            padding-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main-aside-cards-footer-wrapp {
+        width: 100%;
+        height: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            display: none;
+            font-weight: bold;
+            font-size: 20px;
+            color: $black300;
+        }
+    }
+
+    .main-aside-cards-list {
+        height: 60%;
+        width: 100%;
+        min-width: 360px;
+        display: flex;
+        flex-direction: column;  
+        align-items: flex-end;
+        // background: beige;
+
+        .main-aside-card {
+            flex: 1;
+            width: 94%;
+            background: $black800;
+            // border-left: 1px solid $black700;
+            // border-right: 1px solid $black700;
+            // border-radius: 5px;
+            // background: green;
+            min-height: 120px;
+            max-height: 150px;
+            // min-width: 300px;
+
+            div {
+                // background: red;
+                height: 100%;
+                width: 100%;
+
+                .main-aside-card-href {
+                    height: 100%;
+                    width: 100%;
+                    display: block;
+                    padding: 14px;
+                    display: flex;
+                    flex-direction: column;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: $black700;
+                        // opacity: .4;
+                        transition: .4s background;
+                        // transform: scale(98%);
+                        // transition: .3s background;
+                    }
+
+                    .main-aside-card-title-wrapp {
+                        flex: 3;
+                        // background: green;
+                        
+                        .main-aside-card-title {
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+
+                    .main-aside-card-publisher-wrapp {
+                        flex: 1;
+                        // background: beige;
+                        display: flex;
+                        align-items: flex-end;
+                        
+                        .main-aside-card-publisher {
+                            font-size: 12px;
+                            margin-bottom: 5px;
+                            font-weight: 500;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-aside-card:first-child {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            // border-top: 1px solid $black700;
+            min-height: 70px;
+            max-height: 70px;
+            border-bottom: 1px solid $black700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            p {
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+
+        .main-aside-card:last-child {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            // border-bottom: 1px solid $black700;
+            min-height: 60px;
+            max-height: 60px;
+            border-top: 1px solid $black700;
+
+            a {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    background: $black700;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+
+                p {
+                    font-weight: bold;
+                    // padding-left: 10px;
+                    font-size: 18px;
+                    color: $cta;
+                }
+            }
+        }
+    }
+}

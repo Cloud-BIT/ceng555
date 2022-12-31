@@ -1,0 +1,22 @@
+.sidebar {
+    height: 100%;
+    width: 400px;
+    // background: $black800;
+    border-right: 1px solid $black800;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .sidebar-heading-wrapp {
+        height: 12%;
+        width: 90%;
+        // background: red;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .sidebar-heading {
+            font-size: 28px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            color: $
