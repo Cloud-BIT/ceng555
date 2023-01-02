@@ -1,0 +1,234 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600;800&display=swap");
+p, a, div, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, #logo {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header {
+  height: 7vh;
+  min-height: 60px;
+  background: #1A202C;
+  width: 100%;
+  -webkit-box-shadow: 3px 1px 3px #000;
+          box-shadow: 3px 1px 3px #000;
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav .logo-wrapp #logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1A365D;
+}
+
+.sidebar {
+  height: 100%;
+  width: 400px;
+  border-right: 1px solid #0d1117;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.sidebar .sidebar-heading-wrapp {
+  height: 12%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .sidebar-heading-wrapp .sidebar-heading {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #27ffbc;
+  padding-left: 15px;
+  background: -webkit-linear-gradient(30deg, #27ffbc, #63B3ED);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sidebar .sidebar-list-wrapp {
+  height: 48%;
+  width: 90%;
+}
+
+.sidebar .sidebar-list-wrapp ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar .sidebar-list-wrapp ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .sidebar-list-wrapp ul li div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  min-height: 55px;
+  min-width: 180px;
+}
+
+.sidebar .sidebar-list-wrapp ul li div p {
+  padding-left: 15px;
+}
+
+.sidebar .sidebar-list-wrapp ul li div:hover {
+  -webkit-transition: .4s;
+  transition: .4s;
+  background: #1A202C;
+}
+
+.sidebar .sidebar-footer-wrapp {
+  height: 30%;
+}
+
+.main-aside {
+  height: 100vh;
+  width: 400px;
+  margin-right: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left: 1px solid #0d1117;
+}
+
+.main-aside .main-aside-cards-stockNews-wrapp {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.main-aside .main-aside-cards-stockNews-wrapp .stockNews-card {
+  height: 80%;
+  width: 94%;
+  background: #0d1117;
+  border-radius: 10px;
+}
+
+.main-aside .main-aside-cards-stockNews-wrapp .stockNews-card:hover {
+  cursor: pointer;
+  opacity: .4;
+  background: #1A202C;
+  -webkit-transition: .4s background;
+  transition: .4s background;
+  -webkit-transform: scale(98%);
+          transform: scale(98%);
+  -webkit-transition: .3s transform;
+  transition: .3s transform;
+}
+
+.main-aside .main-aside-cards-stockNews-wrapp .stockNews-card a {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-aside .main-aside-cards-stockNews-wrapp .stockNews-card a .stockNews-headline-wrapp {
+  height: 25%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #1A202C;
+}
+
+.main-aside .main-aside-cards-stockNews-wrapp .stockNews-card a .stockNews-headline-wrapp p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main-aside .main-aside-cards-stockNews-wrapp .stockNews-card a .stockNews {
+  height: 75%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;

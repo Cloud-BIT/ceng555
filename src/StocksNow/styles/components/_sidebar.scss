@@ -47,4 +47,27 @@
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
-                    border-radius: 25px
+                    border-radius: 25px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    cursor: pointer;
+                    min-height: 55px;
+                    min-width: 180px;
+
+                    p { 
+                        padding-left: 15px;
+                    }
+
+                    &:hover {
+                        transition: .4s;
+                        background: $black700;
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar-footer-wrapp {
+        height: 30%;
+    }
+}
