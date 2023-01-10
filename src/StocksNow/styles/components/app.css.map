@@ -4,4 +4,13 @@
     "sources": [
         "app.scss",
         "../config/_config.scss",
-        
+        "../config/_fonts.scss",
+        "../config/_colors.scss",
+        "_header.scss",
+        "_sidebar.scss",
+        "_mainAside.scss",
+        "_main.scss"
+    ],
+    "names": [],
+    "file": "app.css"
+}
