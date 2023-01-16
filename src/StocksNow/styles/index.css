@@ -125,4 +125,42 @@ a {
 }
 
 .sidebar .sidebar-list-wrapp ul li div {
-  display: -webkit
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  min-height: 55px;
+  min-width: 180px;
+}
+
+.sidebar .sidebar-list-wrapp ul li div p {
+  padding-left: 15px;
+}
+
+.sidebar .sidebar-list-wrapp ul li div:hover {
+  -webkit-transition: .4s;
+  transition: .4s;
+  background: #1A202C;
+}
+
+.sidebar .sidebar-footer-wrapp {
+  height: 30%;
+}
+
+.main-aside {
+  height: 100vh;
+  width: 400px;
+  margin-right: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: 
