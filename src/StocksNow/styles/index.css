@@ -252,4 +252,36 @@ a {
   width: 100%;
 }
 
-.main-aside .main-aside-cards-stockNews-wrapp .stockNews-card a .stockNews .stockNews-title
+.main-aside .main-aside-cards-stockNews-wrapp .stockNews-card a .stockNews .stockNews-title-wrapp .stockNews-title {
+  font-size: 18px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.main-aside .main-aside-cards-stockNews-wrapp .stockNews-card a .stockNews .stockNews-publisher-wrapp {
+  height: 30%;
+  width: 100%;
+}
+
+.main-aside .main-aside-cards-stockNews-wrapp .stockNews-card a .stockNews .stockNews-publisher-wrapp .stockNews-publisher {
+  font-size: 12px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.main-aside .main-aside-cards-footer-wrapp {
+  width: 100%;
+  height: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-aside .main-aside-cards-footer-wrapp p {
+  disp
