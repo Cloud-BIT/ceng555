@@ -284,4 +284,41 @@ a {
 }
 
 .main-aside .main-aside-cards-footer-wrapp p {
-  disp
+  display: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #A0AEC0;
+}
+
+.main-aside .main-aside-cards-list {
+  height: 60%;
+  width: 100%;
+  min-width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main-aside .main-aside-cards-list .main-aside-card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 94%;
+  background: #0d1117;
+  min-height: 120px;
+  max-height: 150px;
+}
+
+.main-aside .main-aside-cards-list .main-aside-card div {
+  height: 100%;
+  width: 100%;
+}
+
+.main-aside .main-aside-cards-list 
