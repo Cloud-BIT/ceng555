@@ -348,4 +348,29 @@ a {
           flex: 3;
 }
 
-.main-aside .main-aside-cards-list .main-aside-card div .main-aside-card-href .
+.main-aside .main-aside-cards-list .main-aside-card div .main-aside-card-href .main-aside-card-title-wrapp .main-aside-card-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.main-aside .main-aside-cards-list .main-aside-card div .main-aside-card-href .main-aside-card-publisher-wrapp {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main-aside .main-aside-cards-list .main-aside-card div .main-aside-card-href .main-aside-card-publisher-wrapp .main-aside-card-publisher {
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-aside .main-aside-cards-list .main-aside-card:first-child {
+  border-top-left-r
