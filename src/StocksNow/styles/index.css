@@ -403,4 +403,37 @@ a {
 }
 
 .main-aside .main-aside-cards-list .main-aside-card:last-child a {
-  height: 
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-aside .main-aside-cards-list .main-aside-card:last-child a:hover {
+  background: #1A202C;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.main-aside .main-aside-cards-list .main-aside-card:last-child a p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #27ffbc;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  wid
