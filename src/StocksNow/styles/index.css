@@ -473,4 +473,47 @@ a {
   background: #0d1117;
   border: none;
   color: #fff;
-  paddi
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 15px;
+  border: 1px solid #1A202C;
+}
+
+.main .main-content .main-content-input-wrapp input:focus {
+  background: #1A202C;
+  border: 1px solid #0d1117;
+  outline: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.main .main-aside {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.stockChart-wrapp {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.stockChart-wrapp .chart-nav {
+  height: 8vh;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.stockChart-wrapp .chart-nav ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  display: -we
