@@ -9,4 +9,12 @@
         "components/app.scss",
         "config/_config.scss",
         "config/_fonts.scss",
-      
+        "config/_colors.scss",
+        "components/_header.scss",
+        "components/_sidebar.scss",
+        "components/_mainAside.scss",
+        "components/_main.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
